@@ -3,10 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import { books } from './books';
+import Book from './Book';
+
+function BookList() {
+  return (
+    <section className='book-list'>
+      {
+        books.map((book) => {
+          return <Book key={book.id} { ...book}></Book>;
+        })
+      }
+    </section>
+  );
+}
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BookList />
   </React.StrictMode>,
   document.getElementById('root')
 );

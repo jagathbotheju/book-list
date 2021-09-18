@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import { books } from './books';
-import Book from './Book';
+import Book from './Book'
 
 function BookList() {
   return (
